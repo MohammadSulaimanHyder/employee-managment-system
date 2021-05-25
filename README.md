@@ -1,7 +1,7 @@
 # employee-managment-system
 A spring boot CRUD Web Application to manage employee details.
 
-Technologies used spring MVC, spring boot, thymeleaf, Spring Data JPA, Hibernate, MySQL and bootstrap for styling.
+Technologies used spring MVC, spring boot, thymeleaf, maven, Spring Data JPA, Hibernate, MySQL and bootstrap for styling.
 
 Home Page
 ![main page](https://user-images.githubusercontent.com/74812294/119535478-aaef6000-bda5-11eb-8760-ab609442c1fd.PNG)
