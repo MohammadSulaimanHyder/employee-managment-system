@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymleaf.com">
+
+  <head>
+    <title>Employee Management System</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+  <body>
+  
+  	<div class="container">
+	   <div class="jumbotron jumbotron-fluid">
+  		<div class="container">
+    		<h1 class="display-4">Update employee details here.</h1>
+    		<hr class="my-4">
+    		<form action="#" th:action="@{/addNewEmplyee}" th:object="${employee}" method="post">
+    			<input type="hidden" th:field="*{id}">
+    			<input type="text" th:field="*{firstName}" placeholder="First Name" class="list-group-item list-group-item-dark">
+    			<input type="text" th:field="*{lastName}" placeholder="last Name" class="list-group-item list-group-item-dark">
+    			<input type="text" th:field="*{email}" placeholder="email" class="list-group-item list-group-item-dark">
+    			<button type="submit" class="btn btn-dark">Save Details</button>
+    		</form>
+    		<hr class="my-4">
+    		<a th:href="@{/}">Back to home page.</a>
+  		</div>
+	   </div>
+	 </div>
+	 
+  </body>
+
+</html>
